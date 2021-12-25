@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,499 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  
+
+<body id="body">
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <button class="header__btn">
+          <img src="images/icons/menu-btn.svg" alt="">
+        </button>
+        <nav class="menu">
+          <a class="menu__logo" href="#body">
+            <img src="images/black-logo.svg" alt="Логотип">
+          </a>
+          <button class="menu__btn">
+            <img src="images/icons/close.svg" alt="">
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#about">
+                О проекте
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#offers">
+                Предложения
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#news">
+                Новости
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <a class="menu__phone" href="tel:+78565646787">
+            +7 (856) 564 67 87
+          </a>
+        </nav>
+        <div class="header__contacts">
+          <a class="phone" href="tel:+78565646787">
+            +7 (856) 564 67 87
+          </a>
+          <a class="header__contacts-btn" href="#contacts">
+            Записаться
+          </a>
+        </div>
+      </div>
+      <div class="header-content">
+        <h1 class="header__title">
+          infinity
+        </h1>
+        <p class="header__subtitle">
+          Тихий дом в самом центре Москвы
+        </p>
+      </div>
+    </div>
+  </header>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <h2 class="title about__title">
+          О проекте
+        </h2>
+        <p class="about__text">
+          Геометричные элементы парадного фасада, приковывающие к себе внимание, светлые и просторные помещения с
+          пятиметровыми потолками, сразу отсылают к эстетике американского классического ар-деко.
+        </p>
+        <p class="about__text">
+          Его влияние быстро охватило Америку начала 19 века, формировало образ жизни того периода, который
+          характеризуется бурным экономическим ростом, развитием технологий, машиностроения и строительства культовых
+          известнейших арх-сооружений.
+        </p>
+      </div>
+    </div>
+    <img class="about__img" src="images/about-bg-320.jpg" alt="">
+  </section>
+  <section class="position" id="position">
+    <div class="container">
+      <div class="position__inner">
+        <h2 class="title">
+          Расположение
+        </h2>
+        <div class="position__text-box">
+          <p class="position__text">
+            ул. Климашкина, 16
+          </p>
+          <p class="position__text">
+            ЦАО Пресненский район
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="map" style="background-image: url('../images/map.jpg');"></div>
+  </section>
+  <section class="benefits">
+    <div class="container">
+      <h2 class="title benefits__title">
+        Преимущества
+      </h2>
+      <div class="benefits__items">
+        <div class="benefits__item">
+          <ul class="benefits__list">
+            <li class="benefits__list-item">
+              Уникальная архитектура
+            </li>
+            <li class="benefits__list-item">
+              Фитнес зона
+            </li>
+            <li class="benefits__list-item">
+              Пентхаусы: 5м высота потолка
+            </li>
+            <li class="benefits__list-item">
+              Просторные террасы
+            </li>
+          </ul>
+        </div>
+        <div class="benefits__item">
+          <ul class="benefits__list">
+            <li class="benefits__list-item">
+              Детская зона
+            </li>
+            <li class="benefits__list-item">
+              Собственный ритейл
+            </li>
+            <li class="benefits__list-item">
+              Видовые характеристики
+            </li>
+            <li class="benefits__list-item">
+              Приватность
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slider">
+    <div class="container">
+      <div class="slider__inner">
+        <img class="slider__img" src="images/slider/1.jpg" alt="">
+        <img class="slider__img" src="images/slider/1.jpg" alt="">
+        <img class="slider__img" src="images/slider/1.jpg" alt="">
+        <img class="slider__img" src="images/slider/1.jpg" alt="">
+        <img class="slider__img" src="images/slider/1.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- <section class="offers" id="offers">
+    <div class="container">
+      <h2 class="title offers__title">
+        Предложения
+      </h2>
+    </div>
+    <div class="offers-apartments">
+      <div class="container">
+        <div class="offers-apartments__content">
+          <h3 class="offers-title">
+            Апартаменты
+          </h3>
+          <p class="offers-text">
+            Со второго по шестой этаж гармонично спланированы апартаменты различной площади от 35 до 80 м2, жителям
+            каждого из которых гарантирована максимальная приватность и комфорт.
+          </p>
+          <a class="offers-link" href="#">
+            Стоимость по запросу
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="offers-penthouse">
+      <div class="container">
+        <div class="offers-penthouse__content">
+          <h3 class="offers-title">
+            Пентхаусы
+          </h3>
+          <p class="offers-text">
+            На седьмом этаже Дома предусмотрено несколько пентхаусов. В распоряжении их жителей: высокие полотки 5,5
+            метров, свободная планировка для создания стильного, торжественного интерьера.
+          </p>
+          <a class="offers-link" href="#">
+            Стоимость по запросу
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="specifications">
+    <div class="container">
+      <h2 class="title specifications__title">
+        Технические характеристики
+      </h2>
+    </div>
+    <div class="specifications-item">
+      <div class="container">
+        <div class="specifications-item__inner">
+          <div class="specifications-item__box">
+            <h3 class="specifications-item__title">
+              Сервис
+            </h3>
+            <div class="specifications-item__text-box">
+              <p class="specifications-item__text">
+                Наземный, охраняемый паркинг
+              </p>
+            </div>
+          </div>
+          <img class="specifications-item__img" src="images/icons/dropdown-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="specifications-item">
+      <div class="container">
+        <div class="specifications-item__inner">
+          <div class="specifications-item__box">
+            <h3 class="specifications-item__title">
+              Паркинг
+            </h3>
+            <div class="specifications-item__text-box">
+              <p class="specifications-item__text">
+                Наземный, охраняемый паркинг
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime itaque eveniet commodi voluptatem cumque
+                odio natus temporibus, tempore dolore expedita nulla veniam reiciendis. Excepturi perferendis,
+                voluptatem blanditiis exercitationem vel perspiciatis, numquam officia illo dolore incidunt rem
+                temporibus magnam laboriosam cupiditate quidem. Ab saepe libero, similique dolorum repellendus quaerat
+                beatae vero repudiandae, quos doloremque placeat quibusdam laudantium nostrum distinctio voluptates.
+                Eaque magni perspiciatis voluptas distinctio? Similique distinctio aperiam ex vitae necessitatibus,
+                voluptas autem error ut vero esse odio, culpa eum iusto magni? Aperiam maxime voluptatum fugit voluptas
+                rem nesciunt distinctio, hic qui ab. Aliquid quis quisquam, ullam hic eaque eius omnis!
+              </p>
+            </div>
+          </div>
+          <img class="specifications-item__img" src="images/icons/dropdown-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="specifications-item">
+      <div class="container">
+        <div class="specifications-item__inner">
+          <div class="specifications-item__box">
+            <h3 class="specifications-item__title">
+              Симтема безопасности
+            </h3>
+            <div class="specifications-item__text-box">
+              <p class="specifications-item__text">
+                Наземный, охраняемый паркинг
+              </p>
+            </div>
+          </div>
+          <img class="specifications-item__img" src="images/icons/dropdown-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="specifications-item">
+      <div class="container">
+        <div class="specifications-item__inner">
+          <div class="specifications-item__box">
+            <h3 class="specifications-item__title">
+              Лифты
+            </h3>
+            <div class="specifications-item__text-box">
+              <p class="specifications-item__text">
+                Наземный, охраняемый паркинг
+              </p>
+            </div>
+          </div>
+          <img class="specifications-item__img" src="images/icons/dropdown-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="specifications-item">
+      <div class="container">
+        <div class="specifications-item__inner">
+          <div class="specifications-item__box">
+            <h3 class="specifications-item__title">
+              Территория
+            </h3>
+            <div class="specifications-item__text-box">
+              <p class="specifications-item__text">
+                Наземный, охраняемый паркинг
+              </p>
+            </div>
+          </div>
+          <img class="specifications-item__img" src="images/icons/dropdown-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="specifications-item">
+      <div class="container">
+        <div class="specifications-item__inner">
+          <div class="specifications-item__box">
+            <h3 class="specifications-item__title">
+              Окна
+            </h3>
+            <div class="specifications-item__text-box">
+              <p class="specifications-item__text">
+                Наземный, охраняемый паркинг
+              </p>
+            </div>
+          </div>
+          <img class="specifications-item__img" src="images/icons/dropdown-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="specifications-item">
+      <div class="container">
+        <div class="specifications-item__inner">
+          <div class="specifications-item__box">
+            <h3 class="specifications-item__title">
+              Пажарная сигнализация
+            </h3>
+            <div class="specifications-item__text-box">
+              <p class="specifications-item__text">
+                Наземный, охраняемый паркинг
+              </p>
+            </div>
+          </div>
+          <img class="specifications-item__img" src="images/icons/dropdown-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="specifications-item">
+      <div class="container">
+        <div class="specifications-item__inner">
+          <div class="specifications-item__box">
+            <h3 class="specifications-item__title">
+              Кондиционирование
+            </h3>
+            <div class="specifications-item__text-box">
+              <p class="specifications-item__text">
+                Наземный, охраняемый паркинг
+              </p>
+            </div>
+          </div>
+          <img class="specifications-item__img" src="images/icons/dropdown-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="specifications-item">
+      <div class="container">
+        <div class="specifications-item__inner">
+          <div class="specifications-item__box">
+            <h3 class="specifications-item__title">
+              Вентиляция
+            </h3>
+            <div class="specifications-item__text-box">
+              <p class="specifications-item__text">
+                Наземный, охраняемый паркинг
+              </p>
+            </div>
+          </div>
+          <img class="specifications-item__img" src="images/icons/dropdown-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="photo-slider">
+    <div class="container">
+      <h2 class="title photo-slider__title">
+        Зона комфорта
+      </h2>
+      <p class="photo-slider__text">
+        Открытая эко-терраса в восточной, тихой и защищенной от городского шума части дома, для тех, кто летом
+        предпочитает выпить чашечку кофе на рассвете
+      </p>
+    </div>
+    <div class="photo-slider__items">
+      <img class="photo-slider__item" src="images/slider/photo-1.jpg" alt="">
+      <img class="photo-slider__item" src="images/slider/photo-1.jpg" alt="">
+      <img class="photo-slider__item" src="images/slider/photo-1.jpg" alt="">
+      <img class="photo-slider__item" src="images/slider/photo-1.jpg" alt="">
+      <img class="photo-slider__item" src="images/slider/photo-1.jpg" alt="">
+    </div>
+  </section>
+  <section class="partners">
+    <div class="container">
+      <h2 class="title partners__title">
+        Партнеры
+      </h2>
+      <div class="partners__items">
+        <div class="partners__item">
+          <img class="partners__img" src="images/partners/1.jpg" alt="">
+        </div>
+        <div class="partners__item">
+          <img class="partners__img" src="images/partners/2.jpg" alt="">
+        </div>
+        <div class="partners__item">
+          <img class="partners__img" src="images/partners/3.jpg" alt="">
+        </div>
+        <div class="partners__item">
+          <img class="partners__img" src="images/partners/4.svg" alt="">
+        </div>
+        <div class="partners__item">
+          <img class="partners__img" src="images/partners/5.jpg" alt="">
+        </div>
+        <div class="partners__item">
+          <img class="partners__img" src="images/partners/6.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news" id="news">
+    <div class="container">
+      <h2 class="title news__title">
+        Новости
+      </h2>
+      <div class="news__items">
+        <div class="news__item">
+          <img class="news__img" src="images/news/1.jpg" alt="">
+          <p class="news__item-date">
+            20. 08. 2021
+          </p>
+          <h5 class="news__item-title">
+            Клубный дом INFINITY вошел в топ 10 самых красивых домов Москвы
+          </h5>
+        </div>
+        <div class="news__item">
+          <img class="news__img" src="images/news/2.jpg" alt="">
+          <p class="news__item-date">
+            18. 06. 2021
+          </p>
+          <h5 class="news__item-title">
+            Новостройки, которые могут войти в архитектурную историю Москвы
+          </h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="contacts-title__box">
+        <h2 class="title">Запишитесь на просмотр</h2>
+        <h2 class="title">Контакты</h2>
+      </div>
+      <div class="contacts__items">
+        <div class="contacts__item">
+          <form class="contacts__form" action="#">
+            <div class="contacts-input__box">
+              <input class="contacts__input" type="text" placeholder="Имя">
+              <input class="contacts__input" type="text" placeholder="+7 900 123 12 12">
+            </div>
+            <label class="contacts__item-label">
+              <input class="contacts__item-input" type="checkbox">
+              <span class="contacts__item-checkbox"></span>
+              <span class="contacts__item-text">
+                Согласие на обработку
+                <a class="contacts__item-link" href="#">Персональных данных</a>
+              </span>
+            </label>
+            <button class="contacts__btn" type="submit">
+              Отправить
+            </button>
+          </form>
+        </div>
+        <div class="contacts__item">
+          <div class="contacts__content">
+            <a class="phone" href="tel:+78565646787">
+              +7 (856) 564 67 87
+            </a>
+            <a class="addres" href="#position">
+              Москва, ул. Климашкина 16
+            </a>
+            <a class="mail" href="mailto:help@infinity.ru">
+              help@infinity.ru
+            </a>
+          </div>
+          <div class="contacts__social social">
+            <a class="social__link facebook" href="#"></a>
+            <a class="social__link instagram" href="#"></a>
+            <a class="social__link twitter" href="#"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">
+          © INFINITY 2021. Все права защищены
+        </p>
+        <a class="logo" href="#body">
+          <img src="images/logo.svg" alt="Логотип">
+        </a>
+        <a class="footer__link" href="#">
+          Политика конфеденциальности
+        </a>
+      </div>
+    </div>
+  </footer> -->
 
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
