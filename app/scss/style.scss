@@ -317,6 +317,13 @@
     min-height: 556px;
     margin-left: auto;
   }
+  &-apartments__img {
+    display: none;
+  }
+
+  &-penthouse__img {
+    display: none;
+  }
 }
 
 .specifications {
@@ -474,6 +481,9 @@
     height: 192px;
     border: 1px solid #D3D3D3;
   }
+  &__img-min{
+    display: none;
+  }
 }
 
 .news {
@@ -484,8 +494,9 @@
   }
 
   &__items {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
   }
 
   &__img {
@@ -610,6 +621,9 @@
     font-size: 18px;
     display: block;
     margin-bottom: 18px;
+  }
+  &-title {
+    display: none;
   }
 }
 

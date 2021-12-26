@@ -2,6 +2,14 @@
   .about{
     background-image: url('../images/about-bg-1320.jpg');
   }
+  .offers {
+    &-apartments{
+      background-image: url('../images/apartaments-bg-1000.jpg');
+    }
+    &-penthouse{
+      background-image: url('../images/penthouse-bg-1000.jpg');
+    }
+  }
 }
 
 @media (max-width: 1000px) {
@@ -11,6 +19,42 @@
   .slider{
     &__inner{
       height: 477px;
+    }
+  }
+  .offers {
+    padding-bottom: 100px;
+    &-title{
+      margin-top: 0;
+    }
+    &-link{
+      margin-bottom: 0;
+    }
+    &-apartments {
+      background-image: url('../images/apartaments-bg-800.jpg');
+      margin-bottom: 50px;
+    }
+    &-apartments__content{
+      min-height: auto;
+    }
+    &-penthouse {
+      background-image: url('../images/penthouse-bg-800.jpg');
+    }
+    &-penthouse__content {
+      min-height: auto;
+    }
+  }
+  .partners {
+    &__items {
+      grid-gap: 38px;
+    }
+
+    &__item {
+      height: 154px;
+    }
+  }
+  .news{
+    &__items {
+      grid-gap: 40px;
     }
   }
 }
@@ -100,6 +144,36 @@
   }
 }
 
+@media (max-width: 850px) {
+  .offers {
+    &-apartments {
+      background-image: none;
+    }
+    &-apartments__img{
+      margin: 25px 0;
+      display: block;
+    }
+    &-apartments__content {
+      margin: 0;
+    }
+    &-penthouse {
+      background-image: none;
+    }
+    &-penthouse__content{
+      margin: 0;
+    }
+    &-penthouse__img{
+      margin: 25px 0;
+      display: block;
+    }
+    &-text{
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.015em;
+    }
+  }
+}
+
 @media (max-width: 800px) {
   .title{
     font-size: 24px;
@@ -132,6 +206,100 @@
       letter-spacing: 0.01em;
     }
   }
+  .partners{
+    &__items{
+      grid-gap: 38px;
+    }
+    &__item{
+      height: 154px;
+    }
+  }
+  .contacts{
+    &__items{
+      grid-gap: 40px;
+    }
+    &__item-text{
+      font-size: 12px;
+      line-height: 14px;
+    }
+    .phone {
+      font-weight: 400;
+      font-size: 22px;
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    .addres {
+      font-size: 18px;
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    .mail {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 14px;
+    }
+  }
+  .footer{
+    &__inner{
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo{
+      order: -1;
+      margin-bottom: 11px;
+    }
+    &__copy{
+      margin-bottom: 11px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .specifications{
+    padding: 100px 0;
+    &-item__title{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+    }
+    &-item__text{
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 130%;
+      letter-spacing: 0.015em;
+    }
+  }
+  .photo-slider{
+    padding-bottom: 100px;
+    &__item{
+      height: 373px;
+    }
+  }
+  .partners {
+    padding-bottom: 100px;
+    &__items {
+      grid-gap: 24px;
+    }
+    &__img-min {
+      display: block;
+    }
+    &__img-set {
+      display: none;
+    }
+    &__item {
+      height: 96px;
+    }
+  }
+  .news {
+    padding-bottom: 100px;
+    &__item {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 @media (max-width: 600px) {
@@ -159,6 +327,19 @@
     padding: 100px 0;
     &__inner {
       height: 300px;
+    }
+  }
+  .contacts{
+    padding-bottom: 100px;
+    &__items{
+      grid-template-columns: 1fr;
+      grid-gap: 100px;
+    }
+    &__title{
+      display: none;
+    }
+    &-title {
+      display: block;
     }
   }
 }
@@ -198,6 +379,56 @@
   .slider {
     &__inner {
       height: 149px;
+    }
+  }
+  .specifications {
+    &-item__text {
+      font-size: 12px;
+      line-height: 130%;
+      font-weight: 400;
+      letter-spacing: 0.015em;
+    }
+  }
+  .photo-slider {
+    &__item {
+      height: 227px;
+    }
+  }
+  .partners {
+    &__items {
+      grid-gap: 16px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item {
+      height: 66px;
+    }
+  }
+  .news {
+    &__items {
+      grid-template-columns: 1fr;
+    }
+  }
+  .contacts {
+    .phone {
+      font-weight: 400;
+      font-size: 18px;
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    .addres {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .mail {
+      font-size: 12px;
+      display: block;
+      margin-bottom: 12px;
+    }
+    &__btn{
+      width: 100%;
     }
   }
 }

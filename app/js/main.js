@@ -35,6 +35,14 @@ $(function () {
     nextArrow: '<div class="container"><button class="photo-slider__next" type="button"><svg width="42" height="21" viewBox="0 0 42 21" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="10.1472" width="42" height="0.684754" fill="black"/><rect width="14.7991" height="0.704721" transform="matrix(0.72659 -0.687072 -0.72659 -0.687072 31.2471 21)" fill="black"/><rect width="14.7991" height="0.704721" transform="matrix(0.72659 0.687072 -0.72659 0.687072 31.2471 0)" fill="black"/></svg></button></div>',
     prevArrow: false,
     dots: true,
+    responsive: [
+    {
+      breakpoint: 640,
+      settings: {
+        arrows: false
+      }
+    }
+  ]
   });
   $(".menu a, .logo, .addres, .header__contacts-btn").on("click", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
