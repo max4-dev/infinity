@@ -68,4 +68,5 @@ $(function () {
       $('.header__top').removeClass('header-fixed');
     }
   });
+  
 });

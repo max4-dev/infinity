@@ -4,6 +4,7 @@ body{
   line-height: 23px;
   @extend %sf-300;
   letter-spacing: 0.015em;
+  overflow-x: hidden;
 }
 
 .container{

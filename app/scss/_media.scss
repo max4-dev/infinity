@@ -172,6 +172,9 @@
       letter-spacing: 0.015em;
     }
   }
+  .contacts__item-checkbox{
+    top: 4px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -298,6 +301,13 @@
     &__item {
       display: flex;
       flex-direction: column-reverse;
+    }
+    &__item-date{
+      order: 1;
+      margin-bottom: 10px;
+    }
+    &__item-title {
+      margin-bottom: 30px;
     }
   }
 }

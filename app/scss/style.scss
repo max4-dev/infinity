@@ -573,7 +573,6 @@
     &:checked+.contacts__item-checkbox{
       border: 1px solid #000;
       background-color: #000;
-      background-image: url('../images/icons/checkbox.svg');
       background-repeat: no-repeat;
       background-position: center center;
     }
@@ -586,6 +585,7 @@
     height: 20px;
     border: 1px solid #A7A7A7;
     display: inline-block;
+    background-image: url('../images/icons/checkbox.svg');
   }
   &__item-link{
     color: #A7A7A7;
@@ -601,9 +601,11 @@
     padding: 22px 65px;
     border: 1px solid #000;
     transition: all .5s;
+    background-color: #000;
+    color: #fff;
     &:hover{
-      background-color: #000;
-      color: #fff;
+      background-color: #fff;
+      color: #000;
     }
   }
   .phone{
