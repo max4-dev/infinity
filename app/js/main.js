@@ -68,5 +68,7 @@ $(function () {
       $('.header__top').removeClass('header-fixed');
     }
   });
-  
+
+  new WOW().init();
+
 });

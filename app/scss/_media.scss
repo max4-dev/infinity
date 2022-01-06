@@ -173,7 +173,7 @@
     }
   }
   .contacts__item-checkbox{
-    top: 4px;
+    top: 3px;
   }
 }
 
@@ -255,6 +255,7 @@
     }
     &__copy{
       margin-bottom: 11px;
+      text-align: center;
     }
   }
 }
@@ -411,6 +412,9 @@
     }
     &__item {
       height: 66px;
+      img{
+        padding: 0 15px;
+      }
     }
   }
   .news {

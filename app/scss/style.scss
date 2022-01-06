@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'reset';
 @import 'libs';
+@import 'animation';
 @import 'global';
 
 .header {
@@ -98,7 +99,6 @@
   background-image: url('../images/about-bg.jpg');
   background-repeat: no-repeat;
   background-position: right;
-
   &__inner {
     padding-top: 88px;
   }
@@ -144,7 +144,8 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center
+    background-position: center;
+    animation: slideToggle 1 2s;
   }
 }
 
@@ -480,6 +481,11 @@
     align-items: center;
     height: 192px;
     border: 1px solid #D3D3D3;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    img{
+      transform: translateZ(20px)
+    }
   }
   &__img-min{
     display: none;
