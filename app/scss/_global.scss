@@ -1,3 +1,21 @@
 body{
-  
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 23px;
+  @extend %sf-300;
+  letter-spacing: 0.015em;
+  overflow-x: hidden;
+}
+
+.container{
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.title{
+  font-size: 44px;
+  line-height: 53px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
 }
